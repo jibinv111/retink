@@ -1,0 +1,148 @@
+@import '~bootstrap/scss/bootstrap';
+
+.heading {
+  color: #7e1cfe;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.btn-notify {
+  background: #7e1cfe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 8px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #7e1cfe;
+  animation: glow 1s infinite;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0px 4px 4px #7e1cfe, 0 -4px 4px #7e1cfe;
+  }
+  50% {
+    box-shadow: 0px 4px 4px #ea0022, 0 -4px 4px #ea0022;
+  }
+  100% {
+    box-shadow: 0px 4px 4px #7e1cfe, 0 -4px 4px #7e1cfe;
+  }
+}
+.btn-signup {
+  color: #0085ff;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+  border-radius: 20px;
+  padding: 8px 20px;
+  background: #ffffff;
+  border: 2px solid #7e1cfe;
+  transition:0.5s;
+  &:hover {
+    background: #7e1cfe;
+    color: #ffffff;
+  }
+}
+
+.header {
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    span {
+      color: #7e1cfe;
+    }
+  }
+  p {
+    font-size: 20px;
+    span {
+      color: #7e1cfe;
+      font-weight: 700;
+    }
+  }
+  input {
+    border: none;
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    outline: none;
+  }
+}
+
+.explainer {
+  .box {
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 0 50px;
+    height: 386px;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 30px;
+    a {
+      color: #1da1f2;
+    }
+  }
+}
+
+.transform {
+  h5 {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      width: 20%;
+      background: #754de8;
+    }
+  }
+}
+
+.signup {
+  padding: 80px 0;
+  h4 {
+    color: #7e1cfe;
+  }
+  input {
+    border: 1px solid #754de8;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.footer {
+  .social {
+    padding: 50px 0;
+    background: #d0d0d0;
+    img {
+      margin-bottom: 30px;
+    }
+    a {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: #131313;
+      text-decoration: none;
+    }
+    h5 {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+  }
+}
+.copyright {
+  background: #000000;
+  color: #ffffff;
+  padding: 50px 0;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
